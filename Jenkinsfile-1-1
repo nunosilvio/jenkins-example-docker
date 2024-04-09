@@ -9,7 +9,7 @@ pipeline {
       agent {
         docker {
           image: 'node:16-alpine'
-          args '-v $HOME/:/root/'
+          args: '-v $HOME/:/root/'
         }
       }
       steps {
